@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hearted — Privacy Policy</title>
+  <title>hearted — Privacy Policy</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -18,11 +18,13 @@
       --primary-dim: rgba(61, 214, 170, 0.15);
       --destructive: #ef4444;
     }
+
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
+
     body {
       background-color: var(--bg);
       color: var(--text);
@@ -34,6 +36,7 @@
       align-items: flex-start;
       min-height: 100vh;
     }
+
     .container {
       max-width: 650px;
       width: 100%;
@@ -43,6 +46,7 @@
       padding: 32px;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     }
+
     header {
       display: flex;
       justify-content: space-between;
@@ -51,30 +55,26 @@
       border-bottom: 1px solid var(--card-border);
       padding-bottom: 20px;
     }
+
     .logo-container {
       display: flex;
       align-items: center;
       gap: 12px;
     }
-    .logo-icon {
+
+    .logo-img {
       width: 32px;
       height: 32px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, var(--primary), #2bb08a);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: bold;
-      color: var(--bg);
-      font-size: 18px;
+      object-fit: contain;
     }
+
     .brand-name {
       font-size: 20px;
       font-weight: 700;
       color: #ffffff;
       letter-spacing: -0.5px;
     }
-    /* Language Toggle Switch styling */
+
     .lang-switcher {
       display: flex;
       background-color: var(--bg);
@@ -82,6 +82,7 @@
       border-radius: 12px;
       padding: 4px;
     }
+
     .lang-btn {
       background: none;
       border: none;
@@ -94,24 +95,29 @@
       transition: all 0.2s ease;
       font-family: inherit;
     }
+
     .lang-btn.active {
       background-color: var(--primary);
       color: var(--bg);
     }
+
     h1 {
       font-size: 24px;
       font-weight: 700;
       color: #ffffff;
       margin-bottom: 8px;
     }
+
     .last-updated {
       font-size: 13px;
       color: var(--text-muted);
       margin-bottom: 32px;
     }
+
     .section {
       margin-bottom: 28px;
     }
+
     h2 {
       font-size: 16px;
       font-weight: 600;
@@ -121,27 +127,32 @@
       align-items: center;
       gap: 8px;
     }
+
     p {
       font-size: 14px;
       color: var(--text-muted);
       margin-bottom: 12px;
       line-height: 1.6;
     }
+
     p strong {
       color: var(--text);
       font-weight: 500;
     }
+
     .highlight-red {
       color: var(--destructive);
       font-weight: 600;
     }
-    /* Bilingual conditional display */
+
     body.lang-en [lang="es"] {
       display: none !important;
     }
+
     body.lang-es [lang="en"] {
       display: none !important;
     }
+
     @media (max-width: 480px) {
       body {
         padding: 16px 8px;
@@ -160,16 +171,16 @@
   <div class="container">
     <header>
       <div class="logo-container">
-        <div class="logo-icon">H</div>
-        <span class="brand-name">Hearted</span>
+        <img src="logo.png" alt="logo" class="logo-img" />
+        <span class="brand-name">hearted</span>
       </div>
       <div class="lang-switcher">
         <button id="btn-en" class="lang-btn active" onclick="setLanguage('en')">EN</button>
         <button id="btn-es" class="lang-btn" onclick="setLanguage('es')">ES</button>
       </div>
     </header>
+
     <main>
-      <!-- Title Section -->
       <div lang="en">
         <h1>Privacy Policy</h1>
         <div class="last-updated">Last updated: June 2026</div>
@@ -178,19 +189,18 @@
         <h1>Política de privacidad</h1>
         <div class="last-updated">Última actualización: Junio 2026</div>
       </div>
-      <!-- Section 1 -->
+
       <div class="section">
         <h2 lang="en">1. Commitment to Your Privacy</h2>
         <h2 lang="es">1. Compromiso con tu privacidad</h2>
-        
         <p lang="en">
-          Hearted is a personal growth application designed for self-reflection and emotional awareness. We believe your thoughts and progress are private. This policy details how we handle your data with the highest level of security and anonymity.
+          hearted is a personal growth application designed for self-reflection and emotional awareness. We believe your thoughts and progress are private. This policy details how we handle your data with the highest level of security and anonymity.
         </p>
         <p lang="es">
-          Hearted es una aplicación de crecimiento personal diseñada para la autorreflexión y la conciencia emocional. Creemos que tus pensamientos y progresos son privados. Esta política detalla cómo manejamos tus datos con el máximo nivel de seguridad y anonimato.
+          hearted es una aplicación de crecimiento personal diseñada para la autorreflexión y la conciencia emocional. Creemos que tus pensamientos y progresos son privados. Esta política detalla cómo manejamos tus datos con el máximo nivel de seguridad y anonimato.
         </p>
       </div>
-      <!-- Section 2 -->
+
       <div class="section">
         <h2 lang="en">2. Data We Collect</h2>
         <h2 lang="es">2. Datos que recopilamos</h2>
@@ -216,11 +226,10 @@
           • <strong>Registros y reflexiones:</strong> Guardamos los momentos que registras (celebraciones, reconexiones, notas y las respuestas de tus reflexiones diarias).
         </p>
       </div>
-      <!-- Section 3 -->
+
       <div class="section">
         <h2 lang="en">3. Storage and Synchronization</h2>
         <h2 lang="es">3. Almacenamiento y sincronización</h2>
-        
         <p lang="en">
           Your entries are saved locally on your device using secure storage. They are also synchronized using encryption with our secure database (Supabase) to prevent data loss in case you uninstall the app or change devices.
         </p>
@@ -228,11 +237,10 @@
           Tus registros se guardan localmente en tu dispositivo mediante almacenamiento seguro. También se sincronizan de forma cifrada con nuestra base de datos (Supabase) para evitar la pérdida de información en caso de que desinstales la aplicación o cambies de dispositivo.
         </p>
       </div>
-      <!-- Section 4 -->
+
       <div class="section">
         <h2 lang="en">4. Data Sharing and Usage</h2>
         <h2 lang="es">4. Uso y compartición de información</h2>
-        
         <p lang="en">
           Your data is used solely to populate your history screens, gem statistics, and core app functions. We <strong>never</strong> sell, share, or expose your data to advertisers, third parties, or external tracking services.
         </p>
@@ -240,11 +248,10 @@
           Tus datos se utilizan únicamente para generar tus pantallas de historial, estadísticas de gemas y para permitir el funcionamiento de la app. <strong>Nunca</strong> vendemos, compartimos ni exponemos tus datos a anunciantes, terceros o servicios de seguimiento externos.
         </p>
       </div>
-      <!-- Section 5 -->
+
       <div class="section">
         <h2 lang="en">5. User Control and Data Deletion</h2>
         <h2 lang="es">5. Control del usuario y eliminación de datos</h2>
-        
         <p lang="en">
           You have full control over your data. In compliance with Apple guidelines, you can permanently delete your anonymous account and all associated records from our servers and your device at any time by selecting the option <strong class="highlight-red">Settings &gt; Clear all data</strong>. This action is irreversible.
         </p>
@@ -252,11 +259,10 @@
           Tienes el control total de tus datos. En cumplimiento de las directrices de Apple, puedes eliminar permanentemente tu cuenta anónima y todos tus registros de nuestros servidores y de tu dispositivo en cualquier momento seleccionando la opción <strong class="highlight-red">Configuración &gt; Borrar todos los datos</strong>. Esta acción es irreversible.
         </p>
       </div>
-      <!-- Section 6 -->
+
       <div class="section">
         <h2 lang="en">6. Changes to This Policy</h2>
         <h2 lang="es">6. Cambios a esta política</h2>
-        
         <p lang="en">
           We may update our privacy policy from time to time. You can review the latest version at any time on this page or inside the application.
         </p>
@@ -266,36 +272,35 @@
       </div>
     </main>
   </div>
+
   <script>
     function setLanguage(lang) {
       document.body.className = 'lang-' + lang;
       document.getElementById('btn-en').classList.toggle('active', lang === 'en');
       document.getElementById('btn-es').classList.toggle('active', lang === 'es');
       
-      // Persist language preference in localStorage
       try {
         localStorage.setItem('hearted-privacy-lang', lang);
       } catch (e) {}
     }
-    // Auto-detect language on load
+
     (function() {
-      // 1. Check saved preference
       let savedLang = null;
       try {
         savedLang = localStorage.getItem('hearted-privacy-lang');
       } catch (e) {}
-      // 2. Check URL parameters
+
       if (!savedLang) {
         const params = new URLSearchParams(window.location.search);
         savedLang = params.get('lang');
       }
-      // 3. Check browser language
+
       if (!savedLang && navigator.language) {
         if (navigator.language.startsWith('es')) {
           savedLang = 'es';
         }
       }
-      // Default to English if not detected or set
+
       if (savedLang === 'es' || savedLang === 'en') {
         setLanguage(savedLang);
       } else {
